@@ -39,9 +39,7 @@ filterArray(array, (item, index) => console.log(`array[${index}] : ${item}`));
 const someArray = (array, callback) => {
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
-    if (typeof callback(element, index) !== 'boolean') {
-      return false;
-    } else if (callback(element, index)) {
+    if (callback(element, index)) {
       return true;
     }
   }
