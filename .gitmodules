@@ -1,0 +1,3 @@
+[submodule "elden-ring"]
+	path = elden-ring
+	url = https://github.com/mattheri/elden-ring.git
