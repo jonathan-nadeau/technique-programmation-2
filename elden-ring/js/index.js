@@ -9,15 +9,15 @@ const ITEMS = 'items';
 
 const card = ({ name, image, description }) => {
   return `
-		 <div class="card" style="width: 18rem;">
-			 <img src="${image}" class="card-img-top" alt="${name}" loading="lazy">
-			 <div class="card-body">
-				 <h5 class="card-title">${name}</h5>
-				 <p class="card-text">${description}</p>
-				 <a href="#" class="btn btn-primary">Go somewhere</a>
-			 </div>
-		 </div>
-	 `;
+          <div class="card" style="width: 18rem;">
+              <img src="${image}" class="card-img-top" alt="${name}" loading="lazy">
+              <div class="card-body">
+                  <h5 class="card-title">${name}</h5>
+                  <p class="card-text">${description}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      `;
 };
 
 const undisableLink = (selector) => {
@@ -79,6 +79,6 @@ const fetchContent = async (content) => {
 (async () => {
   const items = await fetchContent('items');
   const bosses = await fetchContent('bosses');
-  cardBuilder(items, card, undefined);
-  cardBuilder(bosses, card, 'items');
+  cardBuilder(bosses, card, undefined);
+  cardBuilder(items, card, 'items');
 })();
