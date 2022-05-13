@@ -1,0 +1,22 @@
+.footer {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.footer img {
+  width: 28px;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.footer span {
+  color: hsl(215, 51%, 70%);
+}
+
+.footer .name {
+  color: white;
+}
