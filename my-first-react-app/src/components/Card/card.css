@@ -6,4 +6,5 @@
   background-color: hsl(216, 50%, 16%);
   width: 350px;
   border-radius: 15px;
+  box-shadow: 0 0 20px hsl(216, 60%, 6%);
 }
